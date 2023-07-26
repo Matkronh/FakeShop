@@ -1,0 +1,68 @@
+.navbar{
+    position: relative;
+    top: 0;
+    right: 0;
+    height: 4rem;
+    display: flex;
+    flex-direction: row-reverse;
+    position: fixed;
+}
+
+.header{
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.headerText{
+    font-family: 'Pacifico', cursive;
+    font-size: 7rem;
+}
+
+.logButton{
+    position: relative;
+    height: 3rem;
+    min-width: 10rem;
+    background-color: rgb(95, 93, 93);
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 2%;
+    justify-content: left;
+    align-items: center;
+    border: 1px black solid;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.logButton:hover{
+    background-color: rgb(65, 163, 131);
+    color: rgb(95, 93, 93);
+}
+
+.welcome{
+    position: relative;
+    height: 3rem;
+    min-width: 10rem;
+    background-color: rgb(163, 163, 163);
+    padding: 0.4rem;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 2%;
+    justify-content: left;
+    align-items: center;
+    border: 1px black solid;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+
+.cart{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.4rem;
+}
+
+.cart:hover{
+    background-color: red;
+    border-radius: 25%;
+}
