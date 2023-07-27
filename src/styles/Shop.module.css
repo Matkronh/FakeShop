@@ -66,3 +66,50 @@
     background-color: red;
     border-radius: 25%;
 }
+
+.routebar{
+    position: relative;
+    height: 20rem;
+    top: 5rem;
+}
+.subroutebar1{
+    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subroutebar2{
+    position: relative;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.routerposition{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    
+}
+
+.subrouterposition{
+    position: relative;
+    width: 75%;
+    height: 75%;
+    background-color: rgba(127, 255, 212, 0.432);
+    margin: auto;
+    top: 12.5%;
+    border: 3px black dotted;
+}
+
+.subrouterposition:hover{
+    background-color: rgba(255, 0, 0, 0.432);
+    border: 3px rgb(54, 54, 48) dotted;
+}
+
+.routerText{
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
