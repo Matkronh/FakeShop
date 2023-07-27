@@ -1,4 +1,4 @@
-import { /* Link, */ Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/auth';
@@ -26,38 +26,38 @@ function Layout() {
 
             <div>
                 {user ? 
-                <div>
+                <div className={styles.fullBody}>
                 <div className={styles.navbar}>
                     <Logout/>
                     <p className={styles.welcome}>Welcome, {username}</p>
                     <img className={styles.cart} src={cart}></img>
                 </div>
                 <div className={styles.header}>
-                    <h1 className={styles.headerText}>Louis Betong</h1>
+                    <Link className={styles.headerText} to='/fakeshop/'>Louis Betong</Link>
                 </div>
 
                 <div className={styles.routebar}>
                     <div className={styles.subroutebar1}>
                         <div className={styles.routerposition}>
                             <div className={styles.subrouterposition}>
-                                <h1 className={styles.routerText}>Hats</h1>
+                                <Link className={styles.routerText} to='/fakeshop/hats'>Hats</Link>
                             </div>
                         </div>
                         <div className={styles.routerposition}>
                             <div className={styles.subrouterposition}>
-                                <h1 className={styles.routerText}>Shirts</h1>
+                                <Link className={styles.routerText} to='/fakeshop/shirts'>Shirts</Link>
                             </div>
                         </div>
                     </div>
                     <div className={styles.subroutebar2}>
                         <div className={styles.routerposition}>
-                        <div className={styles.subrouterposition}>
-                                <h1 className={styles.routerText}>Pants</h1>
+                            <div className={styles.subrouterposition}>
+                                <Link className={styles.routerText} to='/fakeshop/pants'>Pants</Link>
                             </div>
                         </div>
                         <div className={styles.routerposition}>
-                        <div className={styles.subrouterposition}>
-                                <h1 className={styles.routerText}>Shoes</h1>
+                            <div className={styles.subrouterposition}>
+                                <Link className={styles.routerText} to='/fakeshop/shoes'>Shoes</Link>
                             </div>
                         </div>
                     </div>
