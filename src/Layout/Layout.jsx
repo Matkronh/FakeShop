@@ -68,16 +68,44 @@ function Layout() {
 
                 </div>
                 :
-                <div>
-                <div className={styles.navbar}>
-                    <Login/>
-                </div>
-                <div className={styles.header}>
-                    <h1 className={styles.headerText}>Louis Betong</h1>
-                </div>
+                <div className={styles.fullBody}>
+                    <div className={styles.navbar}>
+                        <Login/>
+                    </div>
+                    <div className={styles.header}>
+                        <Link className={styles.headerText} to='/fakeshop/'>Louis Betong</Link>
+                    </div>
+
+                    <div className={styles.routebar}>
+                        <div className={styles.subroutebar1}>
+                            <div className={styles.routerposition}>
+                                <div className={styles.subrouterposition}>
+                                    <Link className={styles.routerText} to='/fakeshop/hats'>Hats</Link>
+                                </div>
+                            </div>
+                            <div className={styles.routerposition}>
+                                <div className={styles.subrouterposition}>
+                                    <Link className={styles.routerText} to='/fakeshop/shirts'>Shirts</Link>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.subroutebar2}>
+                            <div className={styles.routerposition}>
+                                <div className={styles.subrouterposition}>
+                                    <Link className={styles.routerText} to='/fakeshop/pants'>Pants</Link>
+                                </div>
+                            </div>
+                            <div className={styles.routerposition}>
+                                <div className={styles.subrouterposition}>
+                                    <Link className={styles.routerText} to='/fakeshop/shoes'>Shoes</Link>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
     
                 <Outlet/>
-    
+
                 </div>
             }
             </div>

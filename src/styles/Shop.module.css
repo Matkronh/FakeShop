@@ -155,15 +155,72 @@
 }
 
 .subSales{
+    position: relative;
     width: 25%;
-    height: 75%;
-    background-color: red;
+    height: 100%;
+    border: 2px black solid;
+}
+
+.imgfixH{
+    height: 100%;
+}
+
+.imgfixW{
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.sale{
+    position: absolute;
+    width: 40%;
+    right: 0;
+    top: 5%;
+}
+
+.purchasetab{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 15%;
+    background-color: rgba(39, 37, 37, 0.384);
+    border-top: 1px black solid;
+}
+
+.price{
+    align-items: left;
+    width: 50%;
+    border-top: 1px black solid;
+}
+
+.addToCart{
+    align-items: right;
+    width: 50%;
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+}
+
+.textAdd{
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 225%;
+    color: yellow;
+}
+
+.textEdit{
+    text-decoration: line-through;
+    color: rgb(243, 63, 63);
 }
 
 .subSalesAlt{
-    height: 75%;
+    position: relative;
+    height: 100%;
     width: 25%;
-    background-color: rgb(255, 0, 221);
+    border: 2px black solid;
 }
 
 .items{
