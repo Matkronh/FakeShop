@@ -13,7 +13,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/fakeshop" element={<Layout />}>
+          <Route path="/FakeShop" element={<Layout />}>
             <Route
               index
               element={<Landing/>}
