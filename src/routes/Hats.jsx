@@ -6,6 +6,7 @@ import hat4 from '../img/BetongPics/hat4.webp'
 import hat5 from '../img/BetongPics/hat5.webp'
 import hat6 from '../img/BetongPics/hat6.webp'
 import sale from '../img/sale-free-download-png-64c76cae393ac.png'
+import Price from '../parts/Price.jsx'
 
 function Hats(){
 
@@ -13,108 +14,52 @@ function Hats(){
         <div className={styles.routedbody}>
             <p className={styles.shopText}>Welcome to Louis Betong online shop.</p>
             <div className={styles.sales}>
-                <div className={styles.subSales}>
-                    <img src={hat1} className={styles.imgfixH}/>
-                    <img src={sale} className={styles.sale}/>
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                <span className={styles.textEdit}>1899$</span> - 1499$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSalesAlt}>
-                    <img src={hat2} className={styles.imgfixH}/>
-                    <img src={sale} className={styles.sale}/>
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                <span className={styles.textEdit}>1599$</span> - 1399$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={hat2}
+                    salepic={sale}
+                    realprice="1899$"
+                    saleprice={1499}
+                    id="2"
+                    name="hat2"
+                    />
+                    <Price
+                    pic={hat1}
+                    salepic={sale}
+                    realprice="1599$"
+                    saleprice={1399}
+                    id="1"
+                    name="hat1"
+                    />
             </div>
             <div className={styles.sales}>
-                <div className={styles.subSalesAlt}>
-                    <img src={hat3} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                11499$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSales}>
-                    <img src={hat4} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1899$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={hat3}
+                    saleprice={2499}
+                    id="3"
+                    name="hat3"
+                    />
+                    <Price
+                    pic={hat4}
+                    saleprice={11499}
+                    id="4"
+                    name="hat4"
+                    />                    
             </div>
             <div className={styles.sales}>
-                <div className={styles.subSales}>
-                    <img src={hat5} className={styles.imgfixW}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSalesAlt}>
-                    <img src={hat6} className={styles.imgfixW}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                11499$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
+                    <Price
+                    pic={hat5}
+                    saleprice={1699}
+                    id="5"
+                    name="hat5"
+                    />
+                    <Price
+                    pic={hat6}
+                    saleprice={11499}
+                    id="6"
+                    name="hat6"
+                    />
                 </div>
             </div>
-        </div>
     )
 }
 

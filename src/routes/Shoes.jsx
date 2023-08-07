@@ -6,6 +6,8 @@ import shoes4 from '../img/BetongPics/shoes4.webp'
 import shoes5 from '../img/BetongPics/shoes5.webp'
 import shoes6 from '../img/BetongPics/shoes6.webp'
 import sale from '../img/sale-free-download-png-64c76cae393ac.png'
+import Price from '../parts/Price'
+import PriceAlt from '../parts/PriceAlt'
 
 function Shoes(){
 
@@ -13,106 +15,48 @@ function Shoes(){
         <div className={styles.routedbody}>
             <p className={styles.shopText}>Welcome to Louis Betong online shop.</p>
             <div className={styles.sales}>
-                <div className={styles.subSales}>
-                    <img src={shoes1} className={styles.imgfixH}/>
-                    <img src={sale} className={styles.sale}/>
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                <span className={styles.textEdit}>1399$</span> - 1299$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSalesAlt}>
-                    <img src={shoes2} className={styles.imgfixW}/>
-
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                11699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={shoes1}
+                    salepic={sale}
+                    realprice="1399$"
+                    saleprice={1299}
+                    id="7"
+                    name="shoes1"
+                    />
+                    <PriceAlt
+                    pic={shoes2}
+                    saleprice={11699}
+                    id="8"
+                    name="shoes2"
+                    />
             </div>
             <div className={styles.sales}>
-                <div className={styles.subSalesAlt}>
-                    <img src={shoes3} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                2599$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSales}>
-                    <img src={shoes4} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1899$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={shoes3}
+                    saleprice={2599}
+                    id="9"
+                    name="shoes3"
+                    />
+                    <Price
+                    pic={shoes4}
+                    saleprice={1899}
+                    id="10"
+                    name="shoes4"
+                    />
             </div>
             <div className={styles.sales}>
-                <div className={styles.subSales}>
-                    <img src={shoes5} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSalesAlt}>
-                    <img src={shoes6} className={styles.imgfixW}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                3699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={shoes5}
+                    saleprice={1699}
+                    id="11"
+                    name="shoes5"
+                    />
+                    <Price
+                    pic={shoes6}
+                    saleprice={3699}
+                    id="12"
+                    name="shoes6"
+                    />
             </div>
         </div>
     )

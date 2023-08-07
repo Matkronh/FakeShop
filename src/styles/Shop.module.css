@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: row-reverse;
     position: fixed;
+    z-index: 100;
 }
 
 .header{
@@ -68,14 +69,36 @@
 }
 
 .cart{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding: 0.4rem;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 0.5rem;
+}
+.cartouter{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 0.5rem;
 }
 
-.cart:hover{
+.cartItemCount {
+    position: absolute;
+    top: 0;
+    right: -8px;
     background-color: red;
-    border-radius: 25%;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+.cart:hover{
+    border: 1px black solid;
 }
 
 .routebar{
@@ -236,4 +259,11 @@
     width: 30%;
     height: 10%;
     border: 1px black solid;
+}
+
+.cartbtn{
+    width: 100%;
+    height: 100%;
+    /* opacity: 0; */
+    /* background-image: url("../img/shopping-cart-free-15-svgrepo-com.svg"); */
 }

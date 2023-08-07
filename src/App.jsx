@@ -9,27 +9,27 @@ import Pants from "./routes/Pants";
 import Shoes from "./routes/Shoes";
 
 function App() {
- 
-
   return (
-
     <>
       <Router>
         <Routes>
-          <Route path='/fakeshop' element={<Layout/>}>
-            <Route index element={<Landing/>}/>
-            <Route path='hats' element={<Hats />}/>
-            <Route path='shirts' element={<Shirts />}/>
-            <Route path='pants' element={<Pants />}/>
-            <Route path='shoes' element={<Shoes />}/>
-            <Route path='*' element={<h1>404</h1>}/>
+          <Route path="/fakeshop" element={<Layout />}>
+            <Route
+              index
+              element={<Landing/>}
+            />
+            <Route path="hats" element={<Hats />} />
+            <Route path="shirts" element={<Shirts />} />
+            <Route path="pants" element={<Pants />} />
+            <Route path="shoes" element={<Shoes />} />
+            <Route path="*" element={<h1>404</h1>} />
           </Route>
         </Routes>
       </Router>
 
       <ToastContainer position="top-left" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

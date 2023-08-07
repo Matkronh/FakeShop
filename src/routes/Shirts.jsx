@@ -6,6 +6,8 @@ import shirt4 from '../img/BetongPics/shirt4.webp'
 import shirt5 from '../img/BetongPics/shirt5.webp'
 import shirt6 from '../img/BetongPics/shirt6.webp'
 import sale from '../img/sale-free-download-png-64c76cae393ac.png'
+import Price from '../parts/Price'
+import PriceAlt from '../parts/PriceAlt'
 
 function Shirts(){
 
@@ -13,106 +15,48 @@ function Shirts(){
         <div className={styles.routedbody}>
             <p className={styles.shopText}>Welcome to Louis Betong online shop.</p>
             <div className={styles.sales}>
-                <div className={styles.subSales}>
-                    <img src={shirt1} className={styles.imgfixW}/>
-                    <img src={sale} className={styles.sale}/>
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                <span className={styles.textEdit}>1899$</span> - 1499$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSalesAlt}>
-                    <img src={shirt2} className={styles.imgfixW}/>
-
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <PriceAlt
+                    pic={shirt1}
+                    salepic={sale}
+                    realprice="1899$"
+                    saleprice={1499}
+                    id="19"
+                    name="shirt1"
+                    />
+                    <PriceAlt
+                    pic={shirt2}
+                    saleprice={1699}
+                    id="20"
+                    name="shirt2"
+                    />
             </div>
             <div className={styles.sales}>
-                <div className={styles.subSalesAlt}>
-                    <img src={shirt3} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1599$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSales}>
-                    <img src={shirt4} className={styles.imgfixW}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1899$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={shirt3}
+                    saleprice={1599}
+                    id="21"
+                    name="shirt3"
+                    />
+                    <PriceAlt
+                    pic={shirt4}
+                    saleprice={1899}
+                    id="22"
+                    name="shirt4"
+                    />
             </div>
             <div className={styles.sales}>
-                <div className={styles.subSales}>
-                    <img src={shirt5} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.subSalesAlt}>
-                    <img src={shirt6} className={styles.imgfixH}/>
-                    
-                    <div className={styles.purchasetab}>
-                        <div className={styles.price}>
-                            <p className={styles.textAdd}>
-                                1699$
-                            </p>
-                        </div>
-                        <div className={styles.addToCart}>
-                            <p className={styles.textAdd}>
-                                Add to cart
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                    <Price
+                    pic={shirt5}
+                    saleprice={1699}
+                    id="23"
+                    name="shirt5"
+                    />
+                    <PriceAlt
+                    pic={shirt6}
+                    saleprice={1699}
+                    id="24"
+                    name="shirt6"
+                    />
             </div>
         </div>
     )
