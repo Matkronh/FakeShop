@@ -7,8 +7,10 @@ function PriceAlt(props) {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
+    const uniqueId = `${Date.now()}-${Math.floor(Math.random() * 10000)}`;
+
     const itemToAdd = {
-      id: props.id,
+      id: uniqueId,
       name: props.name,
       price: props.saleprice,
     };

@@ -6,6 +6,8 @@ import styles from '../styles/Shop.module.css';
 import Login from '../parts/Login';
 import Logout from '../parts/Logout';
 import Modal from '../parts/Modal';
+import VideoBackground from '../parts/VideoBackground';
+
 
 function Layout() {
   const [user, setUser] = useState(null);
@@ -25,6 +27,7 @@ function Layout() {
     <div>
       {user ? (
         <div className={styles.fullBody}>
+          <VideoBackground/>
           <div className={styles.navbar}>
             <Logout />
             <p className={styles.welcome}>Welcome, {username}</p>
@@ -34,7 +37,7 @@ function Layout() {
           </div>
           <div className={styles.header}>
             <Link className={styles.headerText} to='/fakeshop/'>
-              Louis Betong
+              Louis Beton
             </Link>
           </div>
 
@@ -77,12 +80,13 @@ function Layout() {
         </div>
       ) : (
         <div className={styles.fullBody}>
+          <VideoBackground/>
           <div className={styles.navbar}>
             <Login />
           </div>
           <div className={styles.header}>
             <Link className={styles.headerText} to='/fakeshop/'>
-              Louis Betong
+              Louis Beton
             </Link>
           </div>
 

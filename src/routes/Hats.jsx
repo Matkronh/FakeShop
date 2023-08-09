@@ -12,7 +12,7 @@ function Hats(){
 
     return(
         <div className={styles.routedbody}>
-            <p className={styles.shopText}>Welcome to Louis Betong online shop.</p>
+            <p className={styles.shopText}>Welcome to Louis Beton online shop.</p>
             <div className={styles.sales}>
                     <Price
                     pic={hat2}
